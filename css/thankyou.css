@@ -1,0 +1,78 @@
+body{
+    background-color: #F0F4F5;
+    position: relative;
+}
+.thank_page{
+    padding:50px 0;
+    clear: both;
+  
+}
+.thank_page .card{
+    border-radius:0px;
+    border: 0px;
+   
+}
+#thank_icon svg{
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.title_head h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.title_head p{
+    text-align: center;
+    font-size:18px;
+    font-family: inherit;
+    line-height:28px;
+    color: #000;
+    margin-bottom:10px;
+}
+.note_thank {
+  border-left: 5px solid #f44336; 
+  padding:10px;
+  background-color: #ffdddd;
+}
+.note_thank p{
+    margin-bottom:0px;
+    font-size:14px;
+    font-family: inherit;
+    line-height:24px;
+    color: #000;
+    font-weight:500;
+}
+.thank_page .home_btn{
+    margin-bottom:40px;
+}
+.thank_page .home_btn a{
+    border:1px solid #1B59A4;
+    text-align: center;
+    padding:12px 30px;
+    background-color: #1B59A4;
+    border-radius:5px;
+    color:#fff;
+    font-weight:bold;
+    font-size:16px;
+    text-decoration: none;
+}
+#time{
+    border: 1px solid #F0F4F5;
+     width: 30px;
+     height: 30px;
+     display: block;
+     line-height: 30px;
+     text-align: center;
+     border-radius: 30px;
+     background: #F0F4F5;
+     color: #000;
+     font-size:14px;
+     font-weight:bold;
+     float: right;
+ }

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/thankyou.css">
+</head>
+<body>
+        <section class="thank_page clearfix">
+            <div class="container align-middle">
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <span id="time"></span>
+                                <div id="thank_icon"></div>
+                                <div class="title_head text-center">
+                                    <h3>We have received your submission</h3>
+                                    <p>You will receive a confirmation email soon</p>
+                                    <br>
+                                    <div class="home_btn">
+                                        <a href="index.html">Home Page</a>
+                                    </div>
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="note_thank mt-3" role="alert">
+                          <p>  Please be patient, the delivery of email may be delayed. Remember to confirm that the email above is correct and to check your junk or spam folder if you do not receive this email.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+  <script>
+    bodymovin.loadAnimation({
+        container:document.getElementById('thank_icon'),
+        path: 'js/thankyou.json'
+    });
+
+    var count = 10;
+	var redirect = "index.html";	
+	function countDown() {
+		if(count >= 0){
+			document.getElementById("time").innerHTML = count--;
+			setTimeout("countDown()", 2000);
+		}else{
+			window.location.href = redirect;
+		}
+	}
+	countDown();
+  </script>
+  
+
+</body>
+</html>
